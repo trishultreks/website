@@ -15,7 +15,7 @@ import {
   Users,
 } from "lucide-react";
 import type { SyntheticEvent } from "react";
-import { batches, company, faqs, testimonials, treks, trustPoints } from "./data/treks";
+import { company, faqs, testimonials, treks, trustPoints } from "./data/treks";
 
 const enquiryText = encodeURIComponent(
   "Hi Trishul Treks, I want to know more about your upcoming Himalayan trek batches.",
@@ -58,7 +58,6 @@ function App() {
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#treks">Treks</a>
           <a href="#founder">Founder</a>
-          <a href="#batches">Batches</a>
           <a href="#safety">Safety</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -276,33 +275,6 @@ function App() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="batches" className="section-shell split-section">
-        <div>
-          <p className="eyebrow">Upcoming batches</p>
-          <h2>Seasonal departures with simple WhatsApp booking.</h2>
-          <p>
-            Send your preferred trek, month, and group size. Trishul Treks can share pickup point,
-            inclusions, payment steps, and the final packing list in one thread.
-          </p>
-          <a className="button primary compact" href={whatsappUrl} target="_blank" rel="noreferrer">
-            Ask for availability <MessageCircle size={18} />
-          </a>
-        </div>
-
-        <div className="batch-list">
-          {batches.map((batch) => (
-            <article key={`${batch.trek}-${batch.date}`}>
-              <CalendarDays size={22} />
-              <div>
-                <strong>{batch.trek}</strong>
-                <span>{batch.date}</span>
-              </div>
-              <small>{batch.seats}</small>
-            </article>
-          ))}
         </div>
       </section>
 
