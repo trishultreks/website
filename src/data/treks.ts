@@ -20,12 +20,6 @@ export type Trek = {
   };
 };
 
-export type Batch = {
-  trek: string;
-  date: string;
-  seats: string;
-};
-
 export const company = {
   name: "Trishul Treks",
   tagline: "Himalayan treks planned with local care and mountain discipline.",
@@ -408,13 +402,6 @@ export const treks: Trek[] = [
     highlights: ["Offbeat trail", "Custom batch", "Local route"],
     image: fallbackImages.sankri,
   },
-];
-
-export const batches: Batch[] = [
-  { trek: "Kedarkantha Trek", date: "12 Dec 2026", seats: "8 seats left" },
-  { trek: "Dayara Bugyal", date: "21 Dec 2026", seats: "6 seats left" },
-  { trek: "Har Ki Dun", date: "10 Apr 2027", seats: "Open" },
-  { trek: "Gaumukh Tapovan", date: "18 May 2027", seats: "Open" },
 ];
 
 export const trustPoints = [
