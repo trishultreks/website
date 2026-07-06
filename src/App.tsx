@@ -366,7 +366,7 @@ function App() {
       <footer className="site-footer">
         <span>{company.name}</span>
         <span>{company.base}</span>
-        <span>Domain target: trishultrek.in</span>
+        <span>trishultrek.in</span>
       </footer>
     </main>
   );
